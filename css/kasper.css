@@ -9,7 +9,6 @@ html {
 }
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: black;
 }
 ul {
     list-style: none;
@@ -45,6 +44,48 @@ ul {
     --transparent-color: rgb(15 116 143 / 70%);
     --section-padding: 100px;
 }
+
+/* Start Components */
+.main-heading {
+    text-align: center;
+}
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+.main-heading p {
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: rgb(119 119 119);
+}
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: rgb(51 51 51);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+.main-heading h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid rgb(51 51 51);
+    bottom: -38px;
+    background-color: rgb(255 255 255);
+}
+/* end Components */
 
 /* header section */
 header {
