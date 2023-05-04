@@ -823,7 +823,10 @@ color: white;
     max-width: 100%;  
 }
 .subscribe .container form i {
-
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
 }
 .subscribe .container form input[type="email"] {
     border: 1px soild white;
